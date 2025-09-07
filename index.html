@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Record-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!--  -->
+    <section>
+        <div>
+            <img src="main_logo.png" alt="">
+        </div>
+        <div class="flex flex-row justify-evenly">
+            <div class="flex flex-row space-x-2.5">
+                <div><a href="" target="_blank"><img src="facebook.png"  class="w-7 h-7"></a></div>
+                <div><a href="" target="_blank"><img src="instagram.png" class="w-7 h-7"></a></div>
+                <div><a href="" target="_blank"><img src="youtube.png"   class="w-7 h-7"></a></div>
+            </div>
+            <div>
+                <p>Institute - Registration Form</p>
+            </div>
+            <div>
+                <a href="" target="_blank">
+                    <button>
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>Student portal</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button Group -->
+        <div>
+            <div class="flex flex-row justify-center space-x-10 border-b-1 mb-8">
+                <a href="" class="">Registration</a>
+                <a href="" class="">Download ID Card</a>
+                <a href="" class="">Results</a>
+            </div>
+        </div>
+
+    <!-- Form Section -->
+    <section class="mx-10">
+
+        <form>
+
+            <div class="flex flex-col items-center">
+
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select country</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                            <option value="" class="">Select country</option>
+                            <option value="">Pakistan</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select city</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                            <option value="" class="">Select city</option>
+                            <option value="">Karachi</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Islamabad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select course or event</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                            <option value="" class="">Select course or event</option>
+                            <option value="">Graphic Designing</option>
+                            <option value="">Digital Marketing</option>
+                            <option value="">Web and Mobile App Development</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select gender</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                            <option value="" class="">Select gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Full name</p>
+                        <input type="text" id="" placeholder="Full name" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Father name</p>
+                        <input type="text" id="" placeholder="Father name" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Email</p>
+                        <input type="email" id="" placeholder="Email" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Phone</p>
+                        <input type="tel" id="" placeholder="Phone" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">CNIC</p>
+                        <input type="number" id="" placeholder="CNIC" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Father's CNIC (optional)</p>
+                        <input type="number" id="" placeholder="Father's CNIC (optional)" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Date of birth</p>
+                        <input type="date" id="" class="border border-[#8dc63f] text-[13px] text-gray-500 w-[470px] h-12 px-3 rounded-md">
+                    </div>
+                    <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select your computer proficiency</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                            <option value="">Select your computer proficiency</option>
+                            <option value="">None</option>
+                            <option value="">Beginner</option>
+                            <option value="">Intermediate</option>
+                            <option value="">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
+                    <div class="flex flex-col col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Address</p>
+                        <input type="text" id="" placeholder="Address" class="border border-[#8dc63f] text-[12px] text-gray-600 w-240 h-12 px-3 rounded-md">
+                    </div>
+                    <div class="flex flex-col col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Last qualification</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-240 h-12 px-3 rounded-md">
+                            <option value="">Last qualification</option>
+                            <option value="">Matric</option>
+                            <option value="">Intermediate</option>
+                            <option value="">Undergraduate</option>
+                            <option value="">Graduate</option>
+                            <option value="">Masters</option>
+                            <option value="">PHD</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col col-span-12">
+                        <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Do you have a Laptop?</p>
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-240 h-12 px-3 rounded-md">
+                            <option value="">Do you have a Laptop?</option>
+                            <option value="">YES</option>
+                            <option value="">NO</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col col-span-12">
+                        <div>
+                            <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Picture</p>
+                        </div>
+                        <div class="flex flex-row">
+                            <div>
+                                <input type="file" id="">
+                            </div>
+                            <div class="flex flex-col text-[12px]">
+                                <p>With white or blue background</p>
+                                <p>File size must be less than 1MB</p>
+                                <p>File type: jpg, jpeg, png</p>
+                                <p>Upload your recent passport size picture</p>
+                                <p>Your Face should be clearly visible without any Glasses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </section>
+    
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+
+<script src="app.js"></script>
+</html>
