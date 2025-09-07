@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Image Upload</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+
+  <div id="uploadContainer" class="flex gap-4 flex-wrap">
+    <!-- Upload Box -->
+    <label class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-600 cursor-pointer bg-white hover:bg-gray-100 transition">
+      <input type="file" accept="image/*" class="hidden" onchange="previewImage(event)">
+      + Upload
+    </label>
+  </div>
+
+  <script>
+    function previewImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          // uploaded image box
+          const imgBox = document.createElement("div");
+          imgBox.className = "w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg overflow-hidden flex items-center justify-center bg-white";
+          imgBox.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image" class="w-full h-full object-contain">`;
+
+          // add new upload box automatically
+          const uploadContainer = document.getElementById("uploadContainer");
+          uploadContainer.insertBefore(imgBox, uploadContainer.lastElementChild);
+
+          // reset input so same file can be re-selected
+          event.target.value = "";
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+
+</body>
+</html>
