@@ -10,60 +10,74 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="">
+    
+    <section class="relative mx-16">
 
-    <!-- Registration-Form-Inst.    -->
-    <section>
-        <div class="flex flex-row justify-center">
-            <img src="Images/main_logo.png" alt="">
+        <div class="">
+            <img src="Images/banner.jpg" alt="" class="absolute inset-0 w-full h-40 object-cover object-top opacity-10">
         </div>
-        <div class="flex flex-row justify-evenly">
-            <div class="flex flex-row space-x-2.5">
-                <div><a href="" target="_blank"><img src="Images/facebook.png"  class="w-7 h-7"></a></div>
-                <div><a href="" target="_blank"><img src="Images/instagram.png" class="w-7 h-7"></a></div>
-                <div><a href="" target="_blank"><img src="Images/youtube.png"   class="w-7 h-7"></a></div>
+
+        <div class="relative z-10">
+
+            <!-- Logo -->
+            <div class="flex flex-row justify-center">
+                <img src="Images/banner_logo.png" alt="" class="w-[250px]">
             </div>
-            <div>
-                <p>Institute - Registration Form</p>
+            <!-- Top bar -->
+            <div class="flex flex-row justify-evenly">
+                <!-- Social Icons -->
+                <div class="flex flex-row items-center space-x-2.5">
+                    <div><a href="" target="_blank"><img src="Images/facebook.png"  class="w-8 h-8"></a></div>
+                    <div><a href="" target="_blank"><img src="Images/instagram.png" class="w-8 h-8"></a></div>
+                    <div><a href="" target="_blank"><img src="Images/youtube.png"   class="w-8 h-8"></a></div>
+                </div>
+                <!-- Title -->
+                <div>
+                    <p class="text-[28px] font-bold mt-2">Registration Form - SMIT</p>
+                    <p class="text-center text-[14px] my-1.5">Services - Education - Registration</p>
+                </div>
+                <!-- Student Portal -->
+                <div class="flex flex-row items-center">
+                    <a href="" target="_blank">
+                        <button class="text-[#0d6db7] border rounded-2xl px-3 py-1">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span class="text-[14px] font-medium">Student portal</span>
+                        </button>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="" target="_blank">
-                    <button>
-                        <i class="fa-solid fa-user-tie"></i>
-                        <span>Student portal</span>
-                    </button>
-                </a>
-            </div>
+
         </div>
+
     </section>
 
     <!-- Button Group -->
-        <div>
-            <div class="flex flex-row justify-center space-x-10 border-b-1 mb-8">
-                <a href="" class="">Registration</a>
-                <a href="" class="">Download ID Card</a>
-                <a href="" class="">Results</a>
-            </div>
+    <section class="mt-2">
+        <div class="flex flex-row justify-center border border-r-white border-l-white border-t-white border-b-gray-200 mb-8">
+            <a href="" class="text-sm text-[#8dc63f] font-medium border border-gray-200 px-3.5 py-2">Registration</a>
+            <a href="" class="text-sm text-[#0d6db7] font-medium border border-gray-200 px-3.5 py-2">Download ID Card</a>
+            <a href="" class="text-sm text-[#0d6db7] font-medium border border-gray-200 px-3.5 py-2">Results</a>
         </div>
+    </section>
 
     <!-- Form Section -->
-    <section class="mx-10">
+    <section class="mx-10 my-5">
 
         <form>
-
             <div class="flex flex-col items-center">
 
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select country</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[520px] h-13 px-2 rounded-md">
                             <option value="" class="">Select country</option>
                             <option value="">Pakistan</option>
                         </select>
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select city</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[520px] h-13 px-2 rounded-md">
                             <option value="" class="">Select city</option>
                             <option value="">Karachi</option>
                             <option value="">Hyderabad</option>
@@ -74,7 +88,7 @@
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select course or event</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[520px] h-13 px-2 rounded-md">
                             <option value="" class="">Select course or event</option>
                             <option value="">Graphic Designing</option>
                             <option value="">Digital Marketing</option>
@@ -83,7 +97,7 @@
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select gender</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[520px] h-13 px-2 rounded-md">
                             <option value="" class="">Select gender</option>
                             <option value="">Male</option>
                             <option value="">Female</option>
@@ -93,41 +107,41 @@
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Full name</p>
-                        <input type="text" id="" placeholder="Full name" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="text" id="" placeholder="Full name" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Father name</p>
-                        <input type="text" id="" placeholder="Father name" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="text" id="" placeholder="Father name" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                 </div>
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Email</p>
-                        <input type="email" id="" placeholder="Email" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="email" id="" placeholder="Email" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Phone</p>
-                        <input type="tel" id="" placeholder="Phone" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="tel" id="" placeholder="Phone" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                 </div>
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">CNIC</p>
-                        <input type="number" id="" placeholder="CNIC" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="number" id="" placeholder="CNIC" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-[#0d6db7] font-medium">Father's CNIC (optional)</p>
-                        <input type="number" id="" placeholder="Father's CNIC (optional)" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[470px] h-12 px-3 rounded-md">
+                        <input type="number" id="" placeholder="Father's CNIC (optional)" class="border border-[#8dc63f] text-[13px] text-gray-600 w-[520px] h-13 px-3 rounded-md">
                     </div>
                 </div>
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Date of birth</p>
-                        <input type="date" id="" class="border border-[#8dc63f] text-[13px] text-gray-500 w-[470px] h-12 px-3 rounded-md">
+                        <input type="date" id="" class="border border-[#8dc63f] text-[13px] text-gray-500 w-[520px] h-13 px-3 rounded-md">
                     </div>
                     <div class="flex flex-col col-span-6 2xl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Select your computer proficiency</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[470px] h-12 px-2 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-[520px] h-13 px-2 rounded-md">
                             <option value="">Select your computer proficiency</option>
                             <option value="">None</option>
                             <option value="">Beginner</option>
@@ -139,11 +153,11 @@
                 <div class="grid grid-cols-12 flex-row justify-content-center space-x-5 space-y-4">
                     <div class="flex flex-col col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Address</p>
-                        <input type="text" id="" placeholder="Address" class="border border-[#8dc63f] text-[12px] text-gray-600 w-240 h-12 px-3 rounded-md">
+                        <input type="text" id="" placeholder="Address" class="border border-[#8dc63f] text-[14px] font-medium text-gray-600 rounded-md w-265 h-13 px-3">
                     </div>
                     <div class="flex flex-col col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Last qualification</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-240 h-12 px-3 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-265 h-13 px-3 rounded-md">
                             <option value="">Last qualification</option>
                             <option value="">Matric</option>
                             <option value="">Intermediate</option>
@@ -156,7 +170,7 @@
                     </div>
                     <div class="flex flex-col col-span-12">
                         <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Do you have a Laptop?</p>
-                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-240 h-12 px-3 rounded-md">
+                        <select id="" class="border border-[#8dc63f] text-[13px] text-gray-700 w-265 h-13 px-3 rounded-md">
                             <option value="">Do you have a Laptop?</option>
                             <option value="">YES</option>
                             <option value="">NO</option>
@@ -166,9 +180,12 @@
                         <div>
                             <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Picture</p>
                         </div>
-                        <div class="flex flex-row">
-                            <div>
-                                <input type="file" id="">
+                        <div class="flex flex-row space-x-6">
+                            <div class="flex gap-4 flex-wrap">
+                                <label for="" class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-600 cursor-pointer bg-white hover:bg-gray-50 hover:border-gray-400">
+                                    <input type="file" accept="" id="" class="hidden">
+                                    + Upload
+                                </label>
                             </div>
                             <div class="flex flex-col text-[12px]">
                                 <p>With white or blue background</p>
@@ -180,9 +197,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex flex-col space-y-1 border-t-1 border-gray-100 w-270 my-10 pt-6">
+                    <div class="text-sm"><p>1. I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</p></div>
+                    <div class="text-sm"><p>2. I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</p></div>
+                    <div class="text-sm"><p>3. Defiance will render my admission canceled at any point in time.</p></div>
+                    <div class="text-sm"><p>4. Upon completion, of the course, I will complete the required project by SWIT.</p></div>
+                    <div class="text-sm"><p>5. It's mandatory for female students to wear abaya/hijab in the class</p></div>
+                </div>
+                <div class="mb-5">
+                    <div class="bg-[#4292d0] text-center rounded-lg w-270 py-2.5 hover:cursor-pointer">
+                        <a href=""><button class="text-sm text-white">SUBMIT</button></a>
+                    </div>
+                </div>
 
             </div>
-
         </form>
 
     </section>
