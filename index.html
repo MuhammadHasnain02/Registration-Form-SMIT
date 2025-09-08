@@ -12,6 +12,7 @@
 
 <body class="">
     
+    <!-- Navbar Section -->
     <section class="relative mx-16">
 
         <div class="">
@@ -54,15 +55,15 @@
 
     <!-- Button Group -->
     <section class="mt-2">
-        <div class="flex flex-row justify-center border border-r-white border-l-white border-t-white border-b-gray-200 mb-8">
-            <a href="" class="text-sm text-[#8dc63f] font-medium border border-gray-200 px-3.5 py-2">Registration</a>
-            <a href="" class="text-sm text-[#0d6db7] font-medium border border-gray-200 px-3.5 py-2">Download ID Card</a>
-            <a href="" class="text-sm text-[#0d6db7] font-medium border border-gray-200 px-3.5 py-2">Results</a>
+        <div class="flex flex-row justify-center space-x-0.5 border border-r-white border-l-white border-t-white border-b-[#e9e9e9] mb-8">
+            <button id="registrationField" class="text-sm text-[#8dc63f] font-medium border border-[#e9e9e9] px-3.5 py-2 hover:cursor-pointer">Registration</button>
+            <button id="downloadIDCardField" class="text-sm text-[#0d6db7] font-medium border border-[#e9e9e9] px-3.5 py-2 hover:cursor-pointer">Download ID Card</button>
+            <button id="resultsField" class="text-sm text-[#0d6db7] font-medium border border-[#e9e9e9] px-3.5 py-2 hover:cursor-pointer">Results</button>
         </div>
     </section>
 
     <!-- Form Section -->
-    <section class="mx-10 my-5">
+    <section id="registrFormSect" class="mx-10 my-5">
 
         <form>
             <div class="flex flex-col items-center">
@@ -181,9 +182,9 @@
                             <p class="mb-1.5 text-[13px] text-sm text-[#0d6db7] font-medium">Picture</p>
                         </div>
                         <div class="flex flex-row space-x-6">
-                            <div class="flex gap-4 flex-wrap">
-                                <label for="" class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-600 cursor-pointer bg-white hover:bg-gray-50 hover:border-gray-400">
-                                    <input type="file" accept="" id="" class="hidden">
+                            <div id="uploadContainer" class="flex gap-4 flex-wrap">
+                                <label class="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-600 cursor-pointer bg-white hover:bg-gray-50 hover:border-gray-400">
+                                    <input type="file" accept="image/*" class="hidden" onchange="previewImage(event)">
                                     + Upload
                                 </label>
                             </div>
@@ -214,11 +215,39 @@
         </form>
 
     </section>
+
+    <!-- Download ID Card Section -->
+    <section id="downloadIdCardSect">
+
+        <div class="flex flex-col items-center space-y-2">
+            <div class="flex flex-col space-y-2">
+                <label class="text-[#0d6db7] text-[14px] font-medium">CNIC (Which you provided during form submission)</label>
+                <input type="number" id="" class="text-[13px] text-gray-600 border border-[#8dc63f] rounded-md w-[636px] h-13 px-4" placeholder="CNIC (Which you provided during form submission)">
+            </div>
+            <div class="bg-[#4292d0] text-center rounded-lg w-[636px] py-2.5 hover:cursor-pointer">
+                <a href=""><button class="text-sm text-white">SUBMIT</button></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSect">
+
+        <div class="flex flex-col items-center space-y-2">
+            <div class="flex flex-col space-y-2">
+                <label class="text-[#0d6db7] text-[14px] font-medium">Roll number</label>
+                <input type="number" id="" class="text-[13px] text-gray-600 border border-[#8dc63f] rounded-md w-[636px] h-13 px-4" placeholder="Roll number">
+            </div>
+            <div class="bg-[#4292d0] text-center rounded-lg w-[636px] py-2.5 hover:cursor-pointer">
+                <a href=""><button class="text-sm text-white">Search</button></a>
+            </div>
+        </div>
     
+    </section>
 
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="app.js"></script>
 </body>
 
-<script src="app.js"></script>
 </html>
