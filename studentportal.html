@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT - Student Portal</title>
+    <link rel="shortcut icon" href="student_portal_images/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    
+    <!-- Logo & Button Groups Section -->
+    <section class="space-y-1.5 mt-20">
+        
+        <div class="flex flex-col items-center">
+            <img src="student_portal_images/logo.png" class="w-[120px]">
+            <p class="text-[17px] font-medium">Student Portal</p>
+        </div>
+        <div class="flex flex-row justify-center">
+            <div class="bg-[#F5F5F5] rounded-md px-1.5 py-1.5">
+                <button id="loginField" class="text-sm text-gray-600 font-medium rounded-md bg-white shadow-md w-50 h-8 hover:cursor-pointer">Login</button>
+                <button id="createAccField" class="text-sm text-gray-600 font-medium rounded-md w-50 h-8 hover:cursor-pointer">Create a Password</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LogIn Section -->
+    <section id="LoginSect" class="flex flex-col items-center mt-2 space-y-2">
+
+        <div class="flex flex-col rounded-lg space-y-4 border border-gray-200 px-6 py-5 w-100">
+            <div class="flex flex-col mb-5">
+                <p class="text-[17px] font-semibold">Login</p>
+                <p class="text-[15px] text-gray-500">Kindly provide the CNIC number and password used during SMIT course registration.</p>
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-sm">CNIC *</label>
+                <input type="number" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-md">Password *</label>
+                <input type="password" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="">
+                <div class="bg-[#2B4F8C] text-center rounded-md py-1.5 hover:cursor-pointer">
+                    <button class="text-sm font-semibold text-white hover:cursor-pointer">LOGIN</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center border border-gray-200 w-100 py-1.5 rounded-md hover:cursor-pointer hover:bg-gray-100">
+            <div class="">
+                <p>Login as teacher</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Create Account Section -->
+    <section id="CrtAccSect" class="flex flex-col items-center mt-2 space-y-2 hidden">
+
+        <div class="flex flex-col rounded-lg space-y-3 border border-gray-200 px-6 py-5 w-100">
+            <div class="flex flex-col mb-5">
+                <p class="text-[17px] font-semibold">Create a Password</p>
+                <p class="text-[15px] text-gray-500">Kindly provide the CNIC number and DOB used during SMIT course registration.</p>
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-sm">CNIC *</label>
+                <input type="number" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-md">DOB *</label>
+                <input type="date" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-md">Password *</label>
+                <input type="password" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="">
+                <div class="bg-[#2B4F8C] text-center rounded-md py-1.5 hover:cursor-pointer">
+                    <button class="text-sm font-semibold text-white hover:cursor-pointer">LOGIN</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="studentportal.js"></script>
+</body>
+
+</html>

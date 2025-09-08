@@ -8,9 +8,6 @@ let registrationField = document.getElementById("registrationField")
 let downloadIDCardField = document.getElementById("downloadIDCardField")
 let resultsField = document.getElementById("resultsField")
 
-downloadIdCardSect.classList.add("hidden")
-resultsSect.classList.add("hidden")
-
 // Show Section
 function showSection(Section) {
 
