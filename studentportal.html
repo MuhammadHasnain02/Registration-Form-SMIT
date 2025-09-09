@@ -12,7 +12,7 @@
 <body>
     
     <!-- Logo & Button Groups Section -->
-    <section class="space-y-1.5 mt-20">
+    <section id="btnGroupSect" class="space-y-1.5 mt-20">
         
         <div class="flex flex-col items-center">
             <img src="student_portal_images/logo.png" class="w-[120px]">
@@ -27,7 +27,7 @@
 
     </section>
 
-    <!-- LogIn Section -->
+    <!-- LogIn as Student Section -->
     <section id="LoginSect" class="flex flex-col items-center mt-2 space-y-2">
 
         <div class="flex flex-col rounded-lg space-y-4 border border-gray-200 px-6 py-5 w-100">
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center border border-gray-200 w-100 py-1.5 rounded-md hover:cursor-pointer hover:bg-gray-100">
+        <div id="LoginTeachrBtn" class="flex flex-col items-center border border-gray-200 w-100 py-1.5 rounded-md hover:cursor-pointer hover:bg-gray-100">
             <div class="">
                 <p>Login as teacher</p>
             </div>
@@ -81,6 +81,51 @@
                 <div class="bg-[#2B4F8C] text-center rounded-md py-1.5 hover:cursor-pointer">
                     <button class="text-sm font-semibold text-white hover:cursor-pointer">LOGIN</button>
                 </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- LogIn as Teacher Section -->
+    <section id="LoginTeachrSect" class="flex flex-col items-center mt-2 space-y-2 hidden">
+
+        <!-- Logo & Button Groups Section -->
+        <div class="space-y-1.5 mt-20 mb-5">
+            
+            <div class="flex flex-col items-center">
+                <img src="student_portal_images/logo.png" class="w-[120px]">
+                <p class="text-[17px] font-medium">Trainer Portal</p>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col rounded-lg space-y-2 border border-gray-200 px-6 py-5 w-100">
+            <div class="flex flex-col mb-5">
+                <p class="text-[17px] font-semibold">Login</p>
+                <p class="text-[15px] text-gray-500">Kindly provide your email and password to access the trainer portal.</p>
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-sm">Email *</label>
+                <input type="email" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="flex flex-col space-y-1.5">
+                <label for="" class="text-md">Password *</label>
+                <input type="password" id="" class="border border-gray-300 rounded-md h-9 px-3">
+            </div>
+            <div class="">
+                <div class="bg-[#2B4F8C] text-center rounded-md py-1.5 hover:cursor-pointer mt-4">
+                    <button class="text-sm font-semibold text-white hover:cursor-pointer">LOGIN</button>
+                </div>
+            </div>
+            <div class="">
+                <div class="text-center rounded-md hover:cursor-pointer">
+                    <button class="text-md font-normal text-[#0e62f4] hover:cursor-pointer hover:underline">Forgot Password?</button>
+                </div>
+            </div>
+        </div>
+        <div id="LoginStdBtn" class="flex flex-col items-center border border-gray-200 w-100 py-1.5 rounded-md hover:cursor-pointer hover:bg-gray-100">
+            <div class="">
+                <p>Login as student</p>
             </div>
         </div>
         
